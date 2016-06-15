@@ -19,62 +19,49 @@
       "id":"forum"
     }
   ],
-  "sites":[
-    {
-    "name":[
-      {
+  "sites":{
+      "name":{
         "text":"Name",
         "cardClass":"namecard none",
         "txtTitleClass":" name",
         "txtClass":"employee namecard"
-      }
-    ],
-    "twitter":[
-      {
+      },
+      "twitter":{
         "text":"Twitter",
         "cardClass":"twitter",
         "txtTitleClass":"",
         "txtClass":"twitter",
         "imgsrc":"images/twitterlogo.svg"
-      }
-    ],
-    "youtube":[
-      {
+      },
+      "youtube":{
         "text":"Youtube",
         "cardClass":"youtube",
         "txtTitleClass":"",
         "txtClass":"youtube",
         "imgsrc":"images/youtubelogo.svg"
-      }
-    ],
-    "twitch":[
-      {
+      },
+      "twitch":{
         "text":"Twitch",
         "cardClass":"twitch",
         "txtTitleClass":"",
         "txtClass":"twitch",
         "imgsrc":"images/twitchlogo.svg"
-      }
-    ],
-    "instagram":[
-      {
+      },
+      "instagram":{
         "text":"Instagram",
         "cardClass":"instagram",
         "txtTitleClass":"",
         "txtClass":"instagram",
         "imgsrc":"images/instagramlogo.svg"
-      }
-    ],
-    "forum":[
-      {
+      },
+      "forum":{
         "text":"Forum",
         "cardClass":"forum",
         "txtTitleClass":"",
         "txtClass":"forum",
         "imgsrc":"https://linustechtips.com/main/uploads/set_resources_4/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png"
       }
-    ]}
-  ],
+  },
   "employees":[
     {
       "id":"linus",
