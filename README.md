@@ -24,4 +24,4 @@ npm install
 npm start
 ```
 * Navigate to the server
-http://localhost:3000
+[http://localhost:3000](http://localhost:3000)
