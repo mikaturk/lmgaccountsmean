@@ -1,0 +1,237 @@
+<!--Built for LMG by mikat-->
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+  <head>
+    <% include header %>
+  </head>
+  <body>
+    <div class="container">
+      <div id=names>
+        <% maindata.title.forEach(function(item){ %>
+        <a class="card desc <%= maindata.sites[0][item.id][0].cardClass %>">
+          <p class="desc<%= maindata.sites[0][item.id][0].txtTitleClass %>"><%= maindata.sites[0][item.id][0].text %></p>
+        </a>
+        <% }); %>
+      </div>
+      <% maindata.employees.forEach(function(employee){ %>
+      <div id="<%= employee.id %>">
+        <% employee.social.forEach(function(platform){ %>
+        <a class="card <% if(platform.none){ %>none <% } %><% if(maindata.sites[0][platform.id][0].txtClass=='employee namecard'){ %><%= employee.id %> <% } %><%= maindata.sites[0][platform.id][0].txtClass %>"<% if(platform.url){ %> href="<%= platform.url %>"<% } %>>
+          <% if(maindata.sites[0][platform.id][0].txtClass!="employee namecard"&&!platform.none) { %><img class="<%= maindata.sites[0][platform.id][0].txtClass %> socialimg" src="<% if(maindata.sites[0][platform.id][0].imgsrc){ %><%= maindata.sites[0][platform.id][0].imgsrc %> <% } else { %><%= platform.imgsrc %><% } %>"></img><% } %>
+          <% if(!platform.none){ %><p class="<% if(maindata.sites[0][platform.id][0].txtClass=='employee namecard'){ %>employee name<% } else { %>socialname <%= maindata.sites[0][platform.id][0].txtClass %><% } %>"><%= platform.text %></p><% } %>
+        </a>
+        <% }); %>
+      </div>
+      <% }); %>
+      <!--<div id="luke">
+        <a class="card luke employee namecard">
+          <p class="employee name">Luke</p>
+        </a>
+        <a class="card twitter" href="https://twitter.com/luke_lafr">
+          <img class="twitter socialimg" src="images/twitterlogo.svg"></img>
+          <p class="socialname twitter">@luke_lafr</p>
+        </a>
+        <a class="card youtube" href="https://www.youtube.com/LukeLafreniere">
+          <img class="youtube socialimg" src="images/youtubelogo.svg"></img>
+          <p class="socialname youtube">Luke Lafreniere</p>
+        </a>
+        <a class="card twitch" href="https://twitch.tv/luke_lafr">
+          <img class="twitch socialimg" src="images/twitchlogo.svg"></img>
+          <p class="socialname twitch">Luke_Lafr</p>
+        </a>
+        <a class="card instagram" href="https://instagram.com/luke_lafr">
+          <img class="instagram socialimg" src="images/instagramlogo.svg"></img>
+          <p class="socialname instagram">luke_lafr</p>
+        </a>
+        <a class="card forum" href="https://linustechtips.com/main/profile/15975-slick/">
+          <img class="forum socialimg" src="https://linustechtips.com/main/uploads/profile/photo-thumb-15975.png"></img>
+          <p class="socialname forum">Slick</p>
+        </a>
+      </div>
+      <div id="edzel">
+        <a class="card edzel employee namecard">
+          <p class="employee name">Edzel</p>
+        </a>
+        <a class="card twitter" href="https://twitter.com/edzelyago">
+          <img class="twitter socialimg" src="images/twitterlogo.svg"></img>
+          <p class="socialname twitter">@edzelyago</p>
+        </a>
+        <a class="card youtube" href="https://www.youtube.com/EdzelYago">
+          <img class="youtube socialimg" src="images/youtubelogo.svg"></img>
+          <p class="socialname youtube">Edzel Yago</p>
+        </a>
+        <a class="card twitch" href="https://twitch.tv/edyago">
+          <img class="twitch socialimg" src="images/twitchlogo.svg"></img>
+          <p class="socialname">edyago</p>
+        </a>
+        <a class="card instagram" href="https://instagram.com/edzelyago">
+          <img class="instagram socialimg" src="images/instagramlogo.svg"></img>
+          <p class="socialname instagram">edzelyago</p>
+        </a>
+        <a class="card forum" href="https://linustechtips.com/main/profile/5938-dezeltheintern/">
+          <img class="forum socialimg" src="https://linustechtips.com/main/uploads/profile/photo-5938.png"></img>
+          <p class="socialname forum">dezeltheintern</p>
+        </a>
+      </div>
+      <div id="brandon">
+        <a class="card brandon employee namecard">
+          <p class="employee name">Brandon</p>
+        </a>
+        <a class="card twitter" href="https://twitter.com/Brandon_Y_Lee">
+          <img class="twitter socialimg" src="images/twitterlogo.svg"></img>
+          <p class="socialname twitter">@Brandon_Y_Lee</p>
+        </a>
+        <a class="card youtube" href="https://www.youtube.com/smartguy9211">
+          <img class="youtube socialimg" src="images/youtubelogo.svg"></img>
+          <p class="socialname youtube">Brandon Y Lee</p>
+        </a>
+        <a class="card none twitch"></a>
+        <a class="card instagram" href="https://instagram.com/brandon_y_lee">
+          <img class="instagram socialimg" src="images/instagramlogo.svg"></img>
+          <p class="socialname twitch">brandon_y_lee</p>
+        </a>
+        <a class="card forum" href="https://linustechtips.com/main/profile/15963-brolltheintern/">
+          <img class="forum socialimg" src="https://linustechtips.com/main/uploads/profile/photo-thumb-15963.png"></img>
+          <p class="socialname forum">BRollTheIntern</p>
+        </a>
+      </div>
+      <div id="taran">
+        <a class="card taran employee namecard">
+          <p class="employee name">Taran</p>
+        </a>
+        <a class="card twitter" href="https://twitter.com/TaranVH">
+          <img class="twitter socialimg" src="images/twitterlogo.svg"></img>
+          <p class="socialname twitter">@TaranVH</p>
+        </a>
+        <a class="card youtube" href="https://www.youtube.com/TaranVH">
+          <img class="youtube socialimg" src="images/youtubelogo.svg"></img>
+          <p class="socialname youtube">Taran Van Hemert</p>
+        </a>
+        <a class="card none twitch"></a>
+        <a class="card instagram" href="https://www.instagram.com/taranvh">
+          <img class="instagram socialimg" src="images/instagramlogo.svg"></img>
+          <p class="socialname instagram">taranvh</p>
+        </a>
+        <a class="card forum" href="https://linustechtips.com/main/profile/167131-taranlmg/">
+          <img class="forum socialimg" src="https://linustechtips.com/main/uploads/profile/photo-thumb-167131.jpg"></img>
+          <p class="socialname forum">TaranLMG</p>
+        </a>
+      </div>
+      <div id="nick">
+        <a class="card nick employee namecard">
+          <p class="employee name">Nick</p>
+        </a>
+        <a class="card twitter" href="https://twitter.com/nicklmg">
+          <img class="twitter socialimg" src="images/twitterlogo.svg"></img>
+          <p class="socialname twitter">@nicklmg</p>
+        </a>
+        <a class="card none youtube"></a>
+        <a class="card twitch" href="https://twitch.tv/nicklmg">
+          <img class="twitch socialimg" src="images/twitchlogo.svg"></img>
+          <p class="socialname twitch">nicklmg</p>
+        </a>
+        <a class="card instagram" href="https://instagram.com/nicklmg">
+          <img class="instagram socialimg" src="images/instagramlogo.svg"></img>
+          <p class="socialname instagram">nicklmg</p>
+        </a>
+        <a class="card forum" href="https://linustechtips.com/main/profile/80319-nicklmg/">
+          <img class="forum socialimg" src="https://linustechtips.com/main/uploads/profile/photo-thumb-80319.jpg"></img>
+          <p class="socialname forum">nicklmg</p>
+        </a>
+      </div>
+      <div id="colton">
+        <a class="card colton employee namecard">
+          <p class="employee name">Colton</p>
+        </a>
+        <a class="card twitter" href="https://twitter.com/colton_potter">
+          <img class="twitter socialimg" src="images/twitterlogo.svg"></img>
+          <p class="socialname twitter">@colton_potter</p>
+        </a>
+        <a class="card none youtube"></a>
+        <a class="card twitch" href="https://twitch.tv/caltane">
+          <img class="twitch socialimg" src="images/twitchlogo.svg"></img>
+          <p class="socialname twitch">Caltane</p>
+        </a>
+        <a class="card instagram" href="https://instagram.com/_cpotter">
+          <img class="instagram socialimg" src="images/instagramlogo.svg"></img>
+          <p class="socialname instagram">_cpotter</p>
+        </a>
+        <a class="card forum" href="https://linustechtips.com/main/profile/253702-cpotter/">
+          <img class="forum socialimg" src="https://linustechtips.com/main/uploads/profile/photo-thumb-253702.jpg"></img>
+          <p class="socialname forum">CPotter</p>
+        </a>
+      </div>
+      <div id="berkel">
+        <a class="card linus employee namecard">
+          <p class="employee name">Berkel</p>
+        </a>
+        <a class="card twitter" href="https://twitter.com/NEILVANBEIL">
+          <img class="twitter socialimg" src="images/twitterlogo.svg"></img>
+          <p class="socialname twitter">@NEILVANBEIL</p>
+        </a>
+        <a class="card youtube" href="https://www.youtube.com/nickvanberkel27">
+          <img class="youtube socialimg" src="images/youtubelogo.svg"></img>
+          <p class="socialname youtube">BERKEL</p>
+        </a>
+        <a class="card none twitch"></a>
+        <a class="card instagram" href="https://instagram.com/nickvanberkel">
+          <img class="instagram socialimg" src="images/instagramlogo.svg"></img>
+          <p class="socialname twitch">nickvanberkel</p>
+        </a>
+        <a class="card forum" href="https://linustechtips.com/main/profile/147536-berkel/">
+          <img class="forum socialimg" src="https://linustechtips.com/main/uploads/profile/photo-thumb-147536.jpg"></img>
+          <p class="socialname forum">berkel</p>
+        </a>
+      </div>
+      <div id="jon">
+        <a class="card linus employee namecard">
+          <p class="employee name">Jon</p>
+        </a>
+        <a class="card twitter" href="https://twitter.com/jmart604">
+          <img class="twitter socialimg" src="images/twitterlogo.svg"></img>
+          <p class="socialname twitter">@jmart604</p>
+        </a>
+        <a class="card none youtube"></a>
+        <a class="card none twitch"></a>
+        <a class="card none instagram"></a>
+        <a class="card none forum"></a>
+      </div>
+      <div id="dennis">
+        <a class="card linus employee namecard">
+          <p class="employee name">Dennis</p>
+        </a>
+        <a class="card twitter" href="https://twitter.com/dennyishung">
+          <img class="twitter socialimg" src="images/twitterlogo.svg"></img>
+          <p class="socialname twitter">@dennyishung</p>
+        </a>
+        <a class="card youtube" href="https://www.youtube.com/Dennisliaohungchih">
+          <img class="youtube socialimg" src="images/youtubelogo.svg"></img>
+          <p class="socialname youtube">Dennis Liao</p>
+        </a>
+        <a class="card none twitch"></a>
+        <a class="card instagram" href="https://instagram.com/dennyishung">
+          <img class="instagram socialimg" src="images/instagramlogo.svg"></img>
+          <p class="socialname instagram">dennyishung</p>
+        </a>
+        <a class="card forum" href="https://linustechtips.com/main/profile/254994-dennisliao/">
+          <img class="forum socialimg" src="https://linustechtips.com/main/uploads/set_resources_4/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png"></img>
+          <p class="socialname forum">dennisliao</p>
+        </a>
+      </div>
+      <div id="yvonne">
+        <a class="card linus employee namecard">
+          <p class="employee name">Yvonne</p>
+        </a>
+        <a class="card twitter" href="https://twitter.com/Yvonne_H_">
+          <img class="twitter socialimg" src="images/twitterlogo.svg"></img>
+          <p class="socialname twitter">@Yvonne_H_</p>
+        </a>
+        <a class="card none youtube"></a>
+        <a class="card none twitch"></a>
+        <a class="card none instagram"></a>
+        <a class="card none forum"></a>
+      </div>-->
+      <p id="suggestions">If something is wrong or you have suggestions, <a href="https://github.com/dutchtalk/lmgaccounts/issues">open an issue on github</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+/*main.css*/
+
+body {
+  font-size: 21px !important;
+}
+
+div.container {
+  text-align: center;
+  margin-top: 21.5px;
+  padding-top: 10px;
+}
+
+div#names, div#linus {
+  margin: auto;
+}
+
+/*desccard classes*/
+p.desc.card, p.desc.card:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+a.desc.card, a.none {
+  margin: 0 auto;
+}
+
+a.none.card {
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+p.desc, p.none, .employee.name {
+  width: calc(100% - 12px);
+  text-align: center;
+}
+
+p.desc.name, p.none {
+  color: #333;
+}
+
+/*card classes*/
+.card {
+	height: 40px;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.card, .card:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+a.youtube {
+  background-color: rgb(229,45,39);
+}
+
+a.twitter {
+  background-color: #55acee;
+}
+
+a.twitch {
+  background-color: rgb(83,59,121);
+}
+
+a.instagram {
+  background-color: #3f729b;
+}
+
+a.forum {
+  background-color: rgb(219,65,5);
+}
+
+/*img classes*/
+.socialimg {
+  margin-top: 4px;
+  margin-left: 4px;
+  width: 32px;
+  height: 32px;
+  float: left;
+}
+
+.twitch.socialimg, .youtube.socialimg {
+  margin-left: 6px;
+  width: 28px;
+  height: 28px;
+}
+
+.youtube.socialimg {
+  margin-top: 6px;
+}
+
+/*name classes*/
+.socialname {
+  margin: 4px 6px 4px 3px;
+  float: left;
+}
+
+.socialname.twitter {
+  margin: 4px 6px 4px 0px;
+}
+
+.socialname.youtube {
+  margin: 4px 6px 4px 6px;
+}
+
+.employee.name, p.desc, p.none {
+  margin: 4px 6px 4px 6px;
+  float: left;
+}
+
+/*namecard classes*/
+.namecard {
+  text-align: center;
+}
+
+.linus.namecard {
+  background-color: rgb(219,65,5);
+}
+
+.luke.namecard {
+  background-color: rgb(219,65,5);
+}
+/*temporarly setting all the colors to orange for the names because i have not assigned everyone a color :)*/
+.namecard.employee {
+  background-color: rgb(219,65,5);
+}
+
+@media (min-width: 1200px) {
+  .card {
+    width: 215px;
+  }
+  .namecard {
+    width:120px !important;
+  }
+  .card.youtube {
+    width: 215px;
+  }
+  .card.twitch {
+    width: 160px;
+  }
+  .card.instagram {
+    width: 195px;
+  }
+  .card.forum {
+    width: 195px;
+  }
+  #suggestions {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .socialname, .desc {
+    display: none;
+  }
+  body {
+    font-size: 42px !important;
+  }
+  .card {
+    width: 80px;
+    height: 80px;
+  }
+  .employee.name {
+    margin: 10px 6px 10px 6px;
+  }
+  .socialimg {
+    margin-top: 8px;
+    margin-left: 8px;
+    width: 64px;
+    height: 64px;
+  }
+  .twitch.socialimg, .youtube.socialimg {
+    margin-top: 12px;
+    margin-left: 12px;
+    width: 56px;
+    height: 56px;
+  }
+  .card.employee {
+    width: 200px;
+  }
+  #suggestions {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 688px) {
+  body {
+    font-size: 31.5px !important;
+  }
+  .card {
+    width: 60px;
+    height: 60px;
+  }
+  .employee.name {
+    margin: 7.5px 6px 7.5px 6px;
+  }
+  .socialimg {
+    margin-top: 6px;
+    margin-left: 6px;
+    width: 48px;
+    height: 48px;
+  }
+  .twitch.socialimg, .youtube.socialimg {
+    margin-top: 9px;
+    margin-left: 9px;
+    width: 42px;
+    height: 42px;
+  }
+  #suggestions {
+    font-size: 24px;
+  }
+
+}
+
+@media (max-width: 573px) {
+  .employee.namecard {
+    width: 100%;
+  }
+  #suggestions {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 365px) {
+  .card {
+    width: 50px;
+    height: 50px;
+  }
+  .socialimg {
+    margin-top: 6px;
+    margin-left: 6px;
+    width: 38px;
+    height: 38px;
+  }
+  .twitch.socialimg, .youtube.socialimg {
+    margin-top: 9px;
+    margin-left: 9px;
+    width: 32px;
+    height: 32px;
+  }
+}
