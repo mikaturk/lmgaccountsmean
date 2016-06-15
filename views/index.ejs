@@ -7,7 +7,7 @@
   <body>
     <div class="container">
       <div id=names>
-        <% maindata.title.forEach(function(item){ %>
+        <% maindata.ids.forEach(function(item){ %>
         <a class="card desc <%= maindata.sites[0][item.id][0].cardClass %>">
           <p class="desc<%= maindata.sites[0][item.id][0].txtTitleClass %>"><%= maindata.sites[0][item.id][0].text %></p>
         </a>
@@ -15,10 +15,10 @@
       </div>
       <% maindata.employees.forEach(function(employee){ %>
       <div id="<%= employee.id %>">
-        <% employee.social.forEach(function(platform){ %>
-        <a class="card <% if(platform.none){ %>none <% } %><% if(maindata.sites[0][platform.id][0].txtClass=='employee namecard'){ %><%= employee.id %> <% } %><%= maindata.sites[0][platform.id][0].txtClass %>"<% if(platform.url){ %> href="<%= platform.url %>"<% } %>>
-          <% if(maindata.sites[0][platform.id][0].txtClass!="employee namecard"&&!platform.none) { %><img class="<%= maindata.sites[0][platform.id][0].txtClass %> socialimg" src="<% if(maindata.sites[0][platform.id][0].imgsrc){ %><%= maindata.sites[0][platform.id][0].imgsrc %> <% } else { %><%= platform.imgsrc %><% } %>"></img><% } %>
-          <% if(!platform.none){ %><p class="<% if(maindata.sites[0][platform.id][0].txtClass=='employee namecard'){ %>employee name<% } else { %>socialname <%= maindata.sites[0][platform.id][0].txtClass %><% } %>"><%= platform.text %></p><% } %>
+        <% employee.social.forEach(function(platform, index){ %>
+        <a class="card <% if(platform.none){ %>none<% } %><% if(maindata.sites[0][maindata.ids[index].id][0].txtClass=='employee namecard'){ %><%= employee.id %> <% } %><%= maindata.sites[0][maindata.ids[index].id][0].txtClass %>"<% if(platform.url){ %> href="<%= platform.url %>"<% } %>>
+          <% if(maindata.sites[0][maindata.ids[index].id][0].txtClass!="employee namecard"&&!platform.none) { %><img class="<%= maindata.sites[0][maindata.ids[index].id][0].txtClass %> socialimg" src="<% if(maindata.sites[0][maindata.ids[index].id][0].imgsrc){ %><%= maindata.sites[0][maindata.ids[index].id][0].imgsrc %> <% } else { %><%= platform.imgsrc %><% } %>"></img><% } %>
+          <% if(!platform.none){ %><p class="<% if(maindata.sites[0][maindata.ids[index].id][0].txtClass=='employee namecard'){ %>employee name<% } else { %>socialname <%= maindata.sites[0][maindata.ids[index].id][0].txtClass %><% } %>"><%= platform.text %></p><% } %>
         </a>
         <% }); %>
       </div>

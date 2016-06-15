@@ -1,5 +1,5 @@
 {
-  "title":[
+  "ids":[
     {
       "id":"name"
     },
@@ -70,7 +70,8 @@
         "text":"Forum",
         "cardClass":"forum",
         "txtTitleClass":"",
-        "txtClass":"forum"
+        "txtClass":"forum",
+        "imgsrc":"https://linustechtips.com/main/uploads/set_resources_4/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png"
       }
     ]}
   ],
@@ -79,32 +80,26 @@
       "id":"linus",
       "social":[
         {
-          "text":"Linus",
-          "id":"name"
+          "text":"Linus"
         },
         {
           "text":"@LinusTech",
-          "id":"twitter",
           "url":"https://twitter.com/LinusTech"
         },
         {
           "text":"LinusCatTips",
-          "id":"youtube",
           "url":"https://youtube.com/LinusCatTips"
         },
         {
           "text":"LinusTech",
-          "id":"twitch",
           "url":"https://twitch.tv/LinusTech"
         },
         {
           "text":"LinusTech",
-          "id":"instagram",
           "url":"https://instagram.com/LinusTech"
         },
         {
           "text":"LinusTech",
-          "id":"forum",
           "imgsrc":"https://linustechtips.com/main/uploads/profile/photo-thumb-3.png",
           "url":"https://linustechtips.com/main/profile/3-linustech/"
         }
