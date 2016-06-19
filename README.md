@@ -1,5 +1,5 @@
 # LMGAccountsexpress
-This is a version of [LMGAccounts](http://dutchtalk.github.io/lmgaccounts) using [Node.js](https://nodejs.org), [Express](http://expressjs.com) and [EJS](embeddedjs.com)
+This is a version of [LMGAccounts](http://dutchtalk.github.io/lmgaccounts) using [Node.js](http://nodejs.org), [Express](http://expressjs.com) and [EJS](http://embeddedjs.com)
 
 Installing on OSX & Linux
 ---
