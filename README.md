@@ -1,19 +1,19 @@
-# LMGAccountsexpress
-This is a version of [LMGAccounts](http://dutchtalk.github.io/lmgaccounts) using [Node.js](http://nodejs.org), [Express](http://expressjs.com) and [EJS](http://embeddedjs.com)
+# LMGAccountsmean
+This is a version of [LMGAccounts](http://dutchtalk.github.io/lmgaccounts)/[LMGAccountsexpress](http://dutchtalk.github.io/lmgaccountsexpress) using [Node.js](http://nodejs.org), [Express](http://expressjs.com) and [EJS](http://embeddedjs.com)
 
 Installing on OSX & Linux
 ---
 
 * Install [Node.js](https://nodejs.org)
 
-* Navigate to the directory you want to install LMGAccountsexpress in
+* Navigate to the directory you want to install LMGAccountsmean in
 ```bash
 cd ~/mycode
 ```
 * Clone the repository and cd into the newly created folder
 ```bash
-git clone https://github.com/dutchtalk/lmgaccountsexpress.git
-cd lmgaccountsexpress
+git clone https://github.com/mikaturk/lmgaccountsmean.git
+cd lmgaccountsmean
 ```
 * Install node module dependencies
 ```bash
