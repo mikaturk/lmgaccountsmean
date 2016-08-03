@@ -1,5 +1,5 @@
 # LMGAccountsmean
-This is a version of [LMGAccounts](http://dutchtalk.github.io/lmgaccounts)/[LMGAccountsexpress](http://dutchtalk.github.io/lmgaccountsexpress) using [Node.js](http://nodejs.org), [Express](http://expressjs.com) and [EJS](http://embeddedjs.com)
+This is a version of [LMGAccounts](https://dutchtalk.github.io/lmgaccounts)/[LMGAccountsexpress](http://dutchtalk.github.io/lmgaccountsexpress) using [Node.js](http://nodejs.org), [Express](http://expressjs.com), [EJS](http://embeddedjs.com) and [MongoDB](http://mongodb.org)
 
 Installing on OSX & Linux
 ---

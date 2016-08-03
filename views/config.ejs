@@ -1,0 +1,23 @@
+<!--Built for LMG by mikat-->
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+  <head>
+    <% include header %>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="stylesheets/config.css"></link>
+    <link rel="stylesheet" href="stylesheets/index.css"></link>
+    <title>Update Database</title>
+  </head>
+  <body>
+    <div class="container">
+      <select id="employeeselector" class="form-control">
+      <% maindata.employees.forEach(function(employee){ %>
+        <option value="<%= employee.id %>"><%= employee.social[0].text %></option>
+      <% }); %>
+      </select>
+      <div class="card">
+      </div>
+      <% include footer %>
+    </div>
+  </body>
+</html>

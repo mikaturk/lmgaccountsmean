@@ -5,11 +5,20 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+// var mongo = require('mongodb');
+
 var routes = require('./routes/index');
 
 var app = express();
 
 app.locals.maindata = require('./main.json')
+app.locals.lang = "en"
+
+if (app.get('env') === 'development') {
+  app.locals.bsurl = "stylesheets/bootstrap.min.css";
+} else {
+  app.locals.bsurl = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css";
+}
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
