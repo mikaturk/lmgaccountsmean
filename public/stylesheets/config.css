@@ -1,0 +1,79 @@
+/*card classes*/
+.card {
+  width: 100%;
+	/*display: inline-block;*/
+	border-radius: 5px;
+}
+
+.social.cardparent {
+  display: inline-block;
+}
+
+.card, .social.cardparent {
+  height: 40px;
+  text-align: center;
+}
+
+.card, .card:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card.general, div.card.forum {
+  background-color: rgb(219,65,5);
+}
+
+div.card.twitter {
+  background-color: #55acee;
+}
+
+div.card.youtube {
+  background-color: rgb(229,45,39);
+}
+
+div.card.twitch {
+  background-color: rgb(83,59,121);
+}
+
+div.card.instagram {
+  background-color: #3f729b;
+}
+
+p.desc {
+  margin: 4px 6px 4px 6px;
+  width: calc(100% - 12px);
+  text-align: center;
+  float: left;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+.cardparent {
+  padding-right: 3px;
+  padding-left: 3px;
+  width: calc(16.66666667% - 2.5px);
+}
+
+.social.card {
+
+}
+
+.socialimg {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .card, .cardparent {
+    height: 60px;
+    width: 60px;
+    /*margin-left: 2.5px;
+    margin-right: 2.5px;*/
+  }
+
+  .buttons {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

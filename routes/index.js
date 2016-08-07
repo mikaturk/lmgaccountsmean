@@ -2,10 +2,9 @@ var express = require('express');
 var router = express.Router();
 
 // var mongodb = require('mongodb');
-// var mongourl = 'mongodb://';
+// var mongourl = 'mongodb://admin:9Ajr$BIktj@Mm9H&38&$@ds023315.mlab.com:23315/lmgaccounts';
 
-var lang = "en"
-/* GET home page. */
+// home page (WIP)
 router.get('/', function(req, res, next) {
   // var MongoClient = mongodb.MongoClient;
   // MongoClient.connect(mongourl, function(err, db){

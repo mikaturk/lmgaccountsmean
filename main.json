@@ -24,42 +24,50 @@
         "text":"Name",
         "cardClass":"namecard none",
         "txtTitleClass":" name",
-        "txtClass":"employee namecard"
+        "txtClass":"employee namecard",
+        "cfgText":"General",
+        "cfgClass":"general",
+        "color": ""
       },
       "twitter":{
         "text":"Twitter",
         "cardClass":"twitter",
         "txtTitleClass":"",
         "txtClass":"twitter",
-        "imgsrc":"images/twitterlogo.svg"
+        "imgsrc":"images/twitterlogo.svg",
+        "color": ""
       },
       "youtube":{
         "text":"Youtube",
         "cardClass":"youtube",
         "txtTitleClass":"",
         "txtClass":"youtube",
-        "imgsrc":"images/youtubelogo.svg"
+        "imgsrc":"images/youtubelogo.svg",
+        "color": ""
       },
       "twitch":{
         "text":"Twitch",
         "cardClass":"twitch",
         "txtTitleClass":"",
         "txtClass":"twitch",
-        "imgsrc":"images/twitchlogo.svg"
+        "imgsrc":"images/twitchlogo.svg",
+        "color": ""
       },
       "instagram":{
         "text":"Instagram",
         "cardClass":"instagram",
         "txtTitleClass":"",
         "txtClass":"instagram",
-        "imgsrc":"images/instagramlogo.svg"
+        "imgsrc":"images/instagramlogo.svg",
+        "color": ""
       },
       "forum":{
         "text":"Forum",
         "cardClass":"forum",
         "txtTitleClass":"",
         "txtClass":"forum",
-        "imgsrc":"https://linustechtips.com/main/uploads/set_resources_4/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png"
+        "imgsrc":"https://linustechtips.com/main/uploads/set_resources_4/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png",
+        "color": ""
       }
   },
   "employees":[

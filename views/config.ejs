@@ -4,18 +4,30 @@
   <head>
     <% include header %>
     <meta name="description" content="">
+    <script src="scripts/jquery-2.1.1.min.js"></script>
     <link rel="stylesheet" href="stylesheets/config.css"></link>
-    <link rel="stylesheet" href="stylesheets/index.css"></link>
+    <link rel="stylesheet" href="stylesheets/docs.min.css"></link>
     <title>Update Database</title>
   </head>
   <body>
     <div class="container">
-      <select id="employeeselector" class="form-control">
-      <% maindata.employees.forEach(function(employee){ %>
-        <option value="<%= employee.id %>"><%= employee.social[0].text %></option>
-      <% }); %>
-      </select>
-      <div class="card">
+      <div class="row">
+        <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3">
+          <select id="employeeselector" class="form-control">
+          <% maindata.employees.forEach(function(employee){ %>
+            <option value="<%= employee.id %>"><%= employee.social[0].text %></option>
+          <% }); %>
+          </select>
+        </div>
+      </div>
+      <div class="row buttons">
+        <% maindata.ids.forEach(function(id){ %>
+        <div class="col-xs-2 social cardparent"> <% platform=maindata.sites[id.id] %>
+          <div class="card social <% if(platform.cfgClass){ %><%= platform.cfgClass %><% } else { %><%= platform.cardClass %><% } %>">
+            <p class="hidden-xs desc"><% if(platform.cfgText){ %><%= platform.cfgText %><% } else { %><%= platform.text %><% } %></p>
+          </div>
+        </div>
+        <% }); %>
       </div>
       <% include footer %>
     </div>
